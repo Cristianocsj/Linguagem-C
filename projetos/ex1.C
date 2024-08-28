@@ -30,4 +30,5 @@ int main(){
 	printf("Matriz\n");
 	Imprime(mat);
 	printf("Soma dos valores da 4ª linha: %d", soma);
+	return 0;
 }
