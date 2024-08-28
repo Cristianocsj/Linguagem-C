@@ -3,35 +3,31 @@
 #define L 4
 #define C 6
 
-void Imprime(int *M, int linha, int coluna){
-  int i, j;
-  for(i = 0; i < linha; i++){
-    for(j = 0; i < coluna; j++){
-      printf("%d  ", M[i].[j])
-    }
-    printf("\n")
-  }
+void Imprime(int M[L][C]){
+	int i, j;
+	for(i=0;i<L;i++){
+		for(j=0;j<C;j++){
+			printf("%d   ", M[i][j]);
+		}
+		printf("\n");
+	}
 }
 
-int main(void) {
-  int mat[4][6], i, j;
-  int soma = 0;
-
-  for(i = 0; i < 4; i++){
-    for(j = 0; j < 6; j++){
-      printf("Digite o valor da posição [%d][%d]: ", i, j);
-      scanf("%d", &mat[i][j]);
-    }
-  }
-  printf("\n");
-
-  for(i = 0; i < 4; i++){
-    for(j = 0; j < 6; j++){
-      if(i == 3){
-        soma += mat[i][j];
-      }
-    }
-  }
-
-  printf("A soma dos valores da última linha é: %d", soma);
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	int i,j,mat[L][C], soma=0;
+	
+	for (i=0;i<L;i++){
+		for(j=0;j<C;j++){
+			printf("Digite um número inteiro: ");
+			scanf("%d", &mat[i][j]);
+			
+			if(i==3){
+				soma=soma+mat[i][j];
+			}
+		}
+	}
+	printf("Matriz\n");
+	Imprime(mat);
+	printf("Soma dos valores da 4ª linha: %d", soma);
 }
