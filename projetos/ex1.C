@@ -1,5 +1,17 @@
 #include <stdio.h>
 #include <locale.h>
+#define L 4
+#define C 6
+
+void Imprime(int *M, int linha, int coluna){
+  int i, j;
+  for(i = 0; i < linha; i++){
+    for(j = 0; i < coluna; j++){
+      printf("%d  ", M[i].[j])
+    }
+    printf("\n")
+  }
+}
 
 int main(void) {
   int mat[4][6], i, j;
