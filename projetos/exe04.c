@@ -35,7 +35,7 @@ int main(int argc, char const *argv[])
         }
 
         i++;
-        printf("Digite a idade da pessoa %d: ", i);
+        printf("Digite a idade da pessoa %d(0 para sair do loop): ", i);
         scanf("%d", &cartao.idade);
     }
 
