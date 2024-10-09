@@ -1,5 +1,11 @@
+//Construa um programa para armazenar 10 bandas musicais,
+//cada uma com nome, estilo e quantidade de álbuns lançados.
+//Ao terminar a entrada de dados, o programa deve exibir nome e estilo musical
+//das bandas que lançaram mais de 5 álbuns.
+//Utilize um struct para definir a estrutura de uma banda.
+
 #include <stdio.h>
-#define Tam 3
+#define Tam 10
 
 struct Banda
 {
